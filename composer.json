@@ -1,0 +1,48 @@
+{
+    "name": "rgalstyan/larapi",
+    "description": "Laravel package for Pi Network payment system",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "pi network", "payment"],
+    "homepage": "https://github.com/rgalstyan/larapi",
+    "autoload": {
+        "psr-4": {
+            "Rgalstyan\\Larapi\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "illuminate/console": "^10.0|^11.0|^12.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "authors": [
+        {
+            "name": "Razmik Galstyan",
+            "email": "galstyanrazmik1988@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rgalstyan\\Larapi\\Providers\\LaraPiServiceProvider"
+            ],
+            "aliases": {
+                "Larapi": "Rgalstyan\\Larapi\\Facades\\Larapi"
+            }
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan vendor:publish --tag=larapi-config",
+            "@php artisan vendor:publish --tag=larapi-migrations"
+        ]
+    }
+}
