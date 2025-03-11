@@ -126,3 +126,4 @@ $paymentId = 123; // Example payment ID
 $updatedPayment = LaraPiDb::updatePayment($paymentId, $paymentDTO);
 return response()->json(['success' => true, 'message' => "Payment updated successfully."]);
 ```
+<p>You can test this package on <a href="[https://example.com](https://sandbox.minepi.com/mobile-app-ui/app/laravel-package-b9e1b05510f937f1)" style="display:inline-block;padding:10px 20px;background-color:#007bff;color:#fff;text-decoration:none;border-radius:5px;">PI Sandbox</a></p>
