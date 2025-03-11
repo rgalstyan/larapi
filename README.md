@@ -8,10 +8,14 @@
     <a href="https://packagist.org/packages/rgalstyan/larapi">
         <img src="https://img.shields.io/packagist/l/rgalstyan/larapi" alt="License">
     </a>
-    <a href="https://example.com">
+</p>
+
+<p align="center">
+    <a href="https://sandbox.minepi.com/mobile-app-ui/app/laravel-package-b9e1b05510f937f1">
         <img src="https://img.shields.io/badge/Test%20on-PI%20Sandbox-612F74?style=for-the-badge&logoColor=white" alt="Test on PI Sandbox">
     </a>
 </p>
+
 
 # Package Installation
 
