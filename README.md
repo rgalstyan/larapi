@@ -8,6 +8,9 @@
     <a href="https://packagist.org/packages/rgalstyan/larapi">
         <img src="https://img.shields.io/packagist/l/rgalstyan/larapi" alt="License">
     </a>
+    <a href="https://example.com">
+        <img src="https://img.shields.io/badge/Test%20on-PI%20Sandbox-612F74?style=for-the-badge&logoColor=white" alt="Test on PI Sandbox">
+    </a>
 </p>
 
 # Package Installation
@@ -126,4 +129,3 @@ $paymentId = 123; // Example payment ID
 $updatedPayment = LaraPiDb::updatePayment($paymentId, $paymentDTO);
 return response()->json(['success' => true, 'message' => "Payment updated successfully."]);
 ```
-<p>You can test this package on <a href="[https://example.com](https://sandbox.minepi.com/mobile-app-ui/app/laravel-package-b9e1b05510f937f1)" style="display:inline-block;padding:10px 20px;background-color:#007bff;color:#fff;text-decoration:none;border-radius:5px;">PI Sandbox</a></p>
